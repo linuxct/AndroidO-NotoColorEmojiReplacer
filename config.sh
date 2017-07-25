@@ -25,7 +25,7 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=androidonotocoloremojireplacer
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -47,9 +47,9 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
-  ui_print "*******************************"
+  ui_print "***********************************"
+  ui_print " Android O NotoColorEmoji Replacer "
+  ui_print "***********************************"
 }
 
 ##########################################################################################
@@ -72,6 +72,7 @@ REPLACE="
 # Construct your own list here, it will overwrite the example
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
+/system/fonts/NotoColorEmoji.ttf
 "
 
 ##########################################################################################
@@ -83,6 +84,7 @@ REPLACE="
 set_permissions() {
   # Default permissions, don't remove them
   set_perm_recursive  $MODPATH  0  0  0755  0644
+  set_perm  $MODPATH/system/fonts/NotoColorEmoji.ttf       0       0       0644
 
   # Only some special files require specific permissions
   # The default permissions should be good enough for most cases
