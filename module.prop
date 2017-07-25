@@ -1,7 +1,7 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
+id=androidonotocoloremojireplacer
+name=Android O NotoColorEmoji Replacer
+version=unique4
+versionCode=4
+author=linuxct
+description=Magisk module to replace system emojis by Android O's DP 4 ones.
 template=4
